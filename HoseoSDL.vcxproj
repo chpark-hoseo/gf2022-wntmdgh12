@@ -149,6 +149,9 @@
     <ClInclude Include="include\main.h" />
     <ClInclude Include="src\Game.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Downloads\Assets-20200903T112050Z-001\Assets\animate.bmp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
