@@ -10,8 +10,8 @@ bool Game::init(const char* title, int xpos, int ypos, int height, int width, in
 
             if (m_pRenderer != 0) {
 
-                m_destinationRectangle.w = m_sourceRectangle.w=100;
-                m_destinationRectangle.h = m_sourceRectangle.h=50;
+                m_destinationRectangle.w = m_sourceRectangle.w=100;//너비
+                m_destinationRectangle.h = m_sourceRectangle.h=50;//높이
               SDL_RenderCopy(m_pRenderer, m_pTexture, &m_sourceRectangle, &m_destinationRectangle);
 
                 SDL_QueryTexture(m_pTexture, NULL, NULL,
