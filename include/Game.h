@@ -10,6 +10,16 @@
 
 class Game
 {
+private:
+	SDL_Window* m_pWindow;
+	SDL_Renderer* m_pRenderer;
+	bool m_bRunning;
+	SDL_Rect m_sourceRectangle;
+	SDL_Rect m_destinationRectangle;
+	int m_currentFrame;
+	static Game* s_pInstance;
+	std::vector<GameObject*> m_gameObjects;
+
 public:
 	Game() { }
 	~Game() { }
@@ -26,16 +36,17 @@ public:
 		int w, h;
 	} SDL_Rect;
 	*/
+	static Game* Instance() {
+		if (s_pInstance == 0) {
+			s_pInstance = new Game();
+			return s_pInstance;
+		}
+		return s_pInstance;
+	}
+	SDL_Renderer* getRenderer() const { return m_pRenderer; }
 
 
-private:
-	SDL_Window* m_pWindow;
-	SDL_Renderer* m_pRenderer;
-	bool m_bRunning;
-	SDL_Rect m_sourceRectangle;
-	SDL_Rect m_destinationRectangle;
-	int m_currentFrame;
 
-	std::vector<GameObject*> m_gameObjects;
 
 };
+typedef Game TheGame;
