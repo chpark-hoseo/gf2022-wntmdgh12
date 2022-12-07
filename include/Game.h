@@ -5,6 +5,8 @@
 #include "GameObject.h"
 #include "Player.h"
 
+#include <vector>
+
 
 class Game
 {
@@ -24,9 +26,6 @@ public:
 		int w, h;
 	} SDL_Rect;
 	*/
-	GameObject m_go;
-	Player m_player;
-
 
 
 private:
@@ -37,6 +36,6 @@ private:
 	SDL_Rect m_destinationRectangle;
 	int m_currentFrame;
 
-
+	std::vector<GameObject*> m_gameObjects;
 
 };
