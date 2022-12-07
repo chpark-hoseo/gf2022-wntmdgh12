@@ -4,6 +4,7 @@
 #include "TextureManager.h"
 #include "GameObject.h"
 #include "Player.h"
+#include "Enemy.h"
 
 #include <vector>
 
