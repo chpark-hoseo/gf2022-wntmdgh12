@@ -144,10 +144,12 @@
   <ItemGroup>
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\TextureManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\main.h" />
-    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="include\Game.h" />
+    <ClInclude Include="include\TextureManager.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Downloads\Assets-20200903T112050Z-001\Assets\animate.bmp" />
